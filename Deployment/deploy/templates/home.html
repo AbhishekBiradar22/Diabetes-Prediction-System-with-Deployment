@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/img/health.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('https://images.ctfassets.net/yixw23k2v6vo/4PPLbAfZmkyN29ZFiKNxx8/0f21c4ca751c001d64f64c9355102387/iStock-1001614786.jpg?w=802&fm=jpg&fit=thumb&q=65&fl=progressive');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            padding: 10px;
+            
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 5px;
+            min-height: 50px;
+            border-bottom: #4caf50 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+            
+        }
+        header .highlight, header .current a {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        .form-group {           
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 1px; 
+            grid-column-gap: 25px;
+            margin-top: 0PX;
+            margin-left: 850px;
+        } 
+        .form-control {
+            padding: 3px;
+            width: 250px;
+            height: fit-content;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-right: 10px;
+            border: #333;
+        }
+        .newsletter button {
+            padding: 10px 30px;
+            margin-top: 5px;
+            margin-left: 76%;
+            align-items: end;
+            font-size: 18px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;  
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container1{
+        margin:0;
+        padding:0;
+        font-family: 'Josefin Sans', sans-serif;
+        height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h2 style="font-family: Josefin Sans sans-serif ",color="white">M4-Diabetes</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </section> 
+    <section class="newsletter">
+        <div class="container1">
+            <div id="intro" class="container-fluid view ">
+                <h2 class="text-center text-capitalize pt-4">Welcome to  M4-Diabetes</h2>
+                <h3 class="text-center text-capitalize pt-2">Know your chances of getting Diabetes!</h3>
+                <hr class="w-75 mx-auto pt-3">
+                <div class="row mb-2">
+            <form action="/predict" method="post">
+            <fieldset style="border: #333;">    
+            <div class="form-group" > 
+                <div class="grid-item" >  
+                <label for="name">Enter your Name</label><br>
+                <input class="form-control"type="text" name="name" id="name" placeholder="name">
+                </div>
+                <div class="grid-item">
+                <label for="preg">No. of Pregnencies</label><br>
+                <input class="form-control" type="text" name="preg" id="preg"  placeholder="Pregnencies">
+                </div>
+                <div class="grid-item">
+                <label for="glucose">Glucose Level</label><br>
+                <input class="form-control"type="text" name="glucose" id="glucose" placeholder="glocuse level">
+                </div>
+                <div class="grid-item">
+                <label for="Bp">Current Blood Pressure</label><br>
+                <input class="form-control" type="text" name="BP" placeholder="Blood Pressure level">
+                </div>
+                <div class="grid-item">
+                <label for="sk">Current Skin Thickness</label><br>
+                <input class="form-control"type="text" name="thickness" id="sk" placeholder="skin thickness">
+                </div>
+                <div class="grid-item">
+                <label for="Insulin">Insulin level</label><br>
+                <input class="form-control"type="text" name="Insulin"id="Insulin" placeholder="Insulin">
+                </div>
+                <div class="grid-item">
+                <label for="BMI">Enter the Body Mass Index</label><br>
+                <input class="form-control"type="text" name="BMI" id="BMI" placeholder="Body Mass Index">
+                </div>
+                <div class="grid-item">
+                <label for="dbfun">Diabetes Pedigree Function</label><br>
+                <input class="form-control"type="text" name="dbfun" id="dbfun" placeholder="Diab fun">
+                </div>
+                <div class="grid-item">
+                <label for="age">Age</label><br>
+                <input class="form-control" type="text" name="age" id="age" placeholder="Age in years">
+                </div>
+                <div class="grid-item">
+                <label for="dummy">Enter Dummy</label><br>
+                <input class="form-control"type="text" name="dummy" id="dummy" placeholder="dummy">
+                </div>
+                </div>
+            </fieldset>
+                <button type="submit" style="margin-right: 260px;" class="btn btn-danger">Submit </button>
+             
+            </form>     
+        </div>
+        </div>
+        </div>
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>              
+</section>
+<footer>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+</body>
+</html>

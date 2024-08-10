@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color:cadetblue">Welcome to diadetes test result</h1>
+
+    <P>{{ ot }}</P>
+    {% if ot==0%}
+    <h2>you are not Diabetic</h2>
+    <h2>Take care</h2>
+
+     {% else %}
+    <h2>You are Diabetic</h2>
+    <h2>You can visit following links</h2>
+    <a href="https://www.cdi.org.in/">click here to get link</a>
+
+    {%endif%}
+    <a href="/">click here to go home page</a> -->
+    <!-- <title>Diabetes Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); -->
+        <!-- }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";>Diabetes Results</h1>
+        <p >Based on our analysis,  </p>
+        <P>{% if ot==0%}
+            <h2  style="color:green;">you are not Diabetic</h2>
+            <h2>Take care</h2>
+        
+             {% else %}
+            <h2 style="color: red;">You are Diabetic</h2>
+            <h2>You can visit following links</h2>
+            <a href="https://www.cdi.org.in/">click here to get link</a> -->
+        
+            <!-- {%endif%}
+            <h4><a href="/">click here to go home page</a></h4></P>
+         You can add more details or dynamic content here -->
+    <!-- </div>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+        }
+        .card{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Diabetes Test Results</h1>
+        <ul>
+            <li> <p >Based on our analysis,  </p></li>
+            <li><P>{% if ot==0%}
+                <h2  style="color:green;">you are not Diabetic</h2>
+                <h2>Take care</h2>
+            
+                 {% else %}
+                <h2 style="color: red;">You are Diabetic</h2>
+                
+            <!-- Add more relevant data here -->
+        </ul>
+        <p>If you have any concerns, consult your doctor.</p>
+        <h2>You can visit following links</h2></li>
+        {%endif%}
+    </div>
+    <div class="footer">
+        <p>Contact us: <a href="mailto:info@diabetesclinic.com">info@diabetesclinic.com</a></p>
+    </div>
+</body>
+</html>
