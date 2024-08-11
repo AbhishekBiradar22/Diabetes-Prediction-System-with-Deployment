@@ -1,5 +1,5 @@
 # Diabetes-Prediction-System-with-Deployment
-In this project, we developed and deployed a diabetes prediction model with a focus on creating a pipeline user-friendly Web interface . The objective is to build a predictive model capable of assessing the likelihood of an individual having diabetes based on various health parameters.
+In this project, we developed and deployed a diabetes prediction model with a focus on creating a pipeline and user-friendly Web interface . The objective is to build a predictive model capable of assessing the likelihood of an individual having diabetes based on various health parameters.
 # Contents
 Requirement.txt: This file includes the required packages and dependencies to run the project successfully. Make sure to install these packages before running the application.
 
